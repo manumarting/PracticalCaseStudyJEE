@@ -21,6 +21,7 @@ public class PetJPA implements Serializable {
 	private String photo;
 	private String name;
 	private String description;
+	private String sex;
 	private float price;
 	private CategoryJPA category;
 
@@ -31,13 +32,14 @@ public class PetJPA implements Serializable {
 		super();
 	}
 	public PetJPA(int id, String datebirth, String photo, String name, String description,
-			Integer price, String category ) {		
+			Integer price, String category, String sex ) {		
 		this.id = id;
 		this.datebirth = datebirth;
 		this.photo = photo;
 		this.name = name;
 		this.description = description;
 		this.price = price;
+		this.sex=sex;
 	}
 
 	/**
@@ -81,6 +83,13 @@ public class PetJPA implements Serializable {
 		this.price = price;
 	}
 	
+	public String getSex() {
+		return sex;
+	}
+	
+	public void setSex(String sex) {
+		this.sex=sex;
+	}
 	/**
 	 * Methods get/set persistent relationships
 	 */

@@ -1,9 +1,9 @@
 <application>
-  <display-name>PracticalCaseStudy</display-name>
+  <display-name>40K Assistant</display-name>
   <module>
     <web>
       <web-uri>PracticalCaseStudyJEE.war</web-uri>
-      <context-root>/PracticalCase</context-root>
+      <context-root>/40kAssistant</context-root>
     </web>
   </module>
   <module>

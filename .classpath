@@ -3,5 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/WildFly 10.x Runtime"/>
+	<classpathentry kind="lib" path="//Mac/Home/Downloads/primefaces-6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

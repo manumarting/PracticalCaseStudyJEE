@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
 		http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
 	version="1.0">
-   <persistence-unit name="PracticalCase">
+   <persistence-unit name="40k_asssistant">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
     <jta-data-source>java:jboss/postgresDS</jta-data-source>
      <properties>

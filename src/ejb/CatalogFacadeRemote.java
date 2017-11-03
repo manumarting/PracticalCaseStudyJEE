@@ -22,4 +22,5 @@ public interface CatalogFacadeRemote {
 	  public Collection<?> listAllPets();
 	  public Collection<?> listPetsByCategory(String category);
 	  public PetJPA showPet(int petId);
+	  public Collection<?> listAllFactions();
 }

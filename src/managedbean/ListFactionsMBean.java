@@ -13,7 +13,7 @@ import javax.faces.bean.*;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-import jpa.CategoryJPA;
+import jpa.FactionJPA;
 import ejb.CatalogFacadeRemote;
 
 /**
@@ -40,7 +40,7 @@ public class ListFactionsMBean implements Serializable{
 	 */
 	public Collection<SelectItem> getCategoryList()
 	{
-		return categoryList;
+		return factionList;
 	}
 	
 	/**
@@ -58,7 +58,7 @@ public class ListFactionsMBean implements Serializable{
 		for (Iterator<FactionJPA> iter2 = factionCollection.iterator(); iter2.hasNext();)
 		{
 			FactionJPA faction2 = (FactionJPA) iter2.next();
-			SelectItem item = new SelectItem(faction2.getName());
+			SelectItem item = new SelectItem(faction2.getNombre());
 			this.factionList.add(item);			
 		}
 		this.factionList.add(new SelectItem("ALL Factions"));

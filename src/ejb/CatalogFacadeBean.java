@@ -35,16 +35,7 @@ public class CatalogFacadeBean implements CatalogFacadeRemote {
 		return allCategories;
 	}
 	 
-	/**
-	 * Method that returns Collection of all categories
-	 */
-	public java.util.Collection<CategoryJPA> listAllFactions() {
-		@SuppressWarnings("unchecked")
-		Collection<CategoryJPA> allFactions = entman.createQuery("from FactionJPA").getResultList();
-		return allFactions;
-	}
-	
-	/**
+		/**
 	 * Method that returns Collection of all pets
 	 */
 	public java.util.Collection<PetJPA> listAllPets() {

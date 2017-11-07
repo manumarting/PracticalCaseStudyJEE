@@ -3,7 +3,7 @@
   <module>
     <web>
       <web-uri>PracticalCaseStudyJEE.war</web-uri>
-      <context-root>/40kAssistant</context-root>
+      <context-root>/PracticalCase</context-root>
     </web>
   </module>
   <module>

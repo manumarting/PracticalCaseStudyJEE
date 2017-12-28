@@ -66,7 +66,7 @@ public class ListLabelsMBean implements Serializable{
 	public String listLabels() throws Exception{
 		labelList();
 		getLabelListView();
-		return "/admin/listLabelsView";
+		return "LabelsListView";
 	}
 	
 

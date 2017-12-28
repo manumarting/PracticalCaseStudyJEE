@@ -1,3 +1,9 @@
+/** Index Calculator
+ * 
+ * Creada por Luis Manuel Martin Guerra
+ * luimargu@uoc.edu
+ */
+
 package ejb;
 
 import java.util.Collection;
@@ -16,6 +22,13 @@ public class IndexCalculator {
 		
 		this.aux=0;
 	}
+	/** Funcionamiento 
+	 * 
+	 * @param Collection de una entidad JPA
+	 * @return el id del último elemento de la lista, de esta manera podemos calcular
+	 * cuál será la siguiente posición
+	 */
+	
 	public int getLabelIndex(Collection<LabelJPA> list) {
 		
 		if(list.isEmpty()) {

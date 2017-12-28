@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+ <h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>40K Assistant - Añadir una nueva regla </title>
+  </h:head>
+	<h:body>
+		<h:form id="addRule" align="center" >
+		   	<h:outputText value="Text*:"/>
+			<h:inputText value="#{addLabel.text}" required="true"/>
+   			<h:outputText value="Description*:"/>
+			<h:inputText value="#{addLabel.description}" required="true"/>
+			<h:commandButton value="Añadir nueva Etiqueta" action ="#{listLabels.listLabels}"  actionListener ="#{addLabel.labelAdd}" inmediate="true"/>
+	       	<h:button value="Cancelar" outcome="LabelsListView" /> 	
+		</h:form>	
+	</h:body>
+</html>

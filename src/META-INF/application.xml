@@ -1,13 +1,13 @@
 <application>
-  <display-name>40K Assistant</display-name>
+  <display-name>Top Offers by PDP4-JLARM</display-name>
   <module>
     <web>
-      <web-uri>PracticalCaseStudyJEE.war</web-uri>
-      <context-root>/PracticalCase</context-root>
+      <web-uri>TopOffers.war</web-uri>
+      <context-root>/TopOffers</context-root>
     </web>
   </module>
   <module>
-    <ejb>PracticalCaseStudyJEE.jar</ejb>
+    <ejb>TopOffers.jar</ejb>
   </module>
 </application>
 

@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><packages version="1.3">
-  <package exploded="false" inWorkspace="true" name="PracticalCaseStudyJEE.jar" todir="/PracticalCaseStudyJEE" type="jar">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<packages version="1.3">
+  <package exploded="false" inWorkspace="true" name="TopOffers.jar" todir="/TopOffers" type="jar">
     <fileset dir="bin" excludes="client/, man*/" flatten="false" inWorkspace="true" includes="**/*.class, **/*.properties">
       <properties/>
     </fileset>
@@ -13,12 +14,12 @@
       <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="1320490195041"/>
     </properties>
   </package>
-  <package exploded="false" inWorkspace="true" name="PracticalCaseStudyJEE.war" todir="/PracticalCaseStudyJEE" type="org.jboss.ide.eclipse.as.core.packages.warPackage">
+  <package exploded="false" inWorkspace="true" name="TopOffers.war" todir="/TopOffers" type="jar">
     <fileset dir="docroot" flatten="false" inWorkspace="true" includes="**">
       <properties/>
     </fileset>
     <folder name="WEB-INF">
-      <fileset dir="/PracticalCaseStudyJEE/docroot/WEB-INF" flatten="false" inWorkspace="true" includes="**/*">
+      <fileset dir="/TopOffers/docroot/WEB-INF" flatten="false" inWorkspace="true" includes="**/*">
         <properties/>
       </fileset>
       <folder name="classes\managedbean">
@@ -33,7 +34,7 @@
       <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="1321091898377"/>
     </properties>
   </package>
-  <package exploded="false" inWorkspace="true" name="PracticalCaseStudyJEE.ear" todir="/PracticalCaseStudyJEE" type="org.jboss.ide.eclipse.as.core.packages.earPackageType">
+  <package exploded="false" inWorkspace="true" name="TopOffers.ear" todir="/TopOffers" type="jar">
     <fileset dir="" flatten="false" inWorkspace="true" includes="*.war, *.jar">
       <properties/>
     </fileset>

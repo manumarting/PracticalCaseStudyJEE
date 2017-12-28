@@ -29,7 +29,7 @@ public class UpdateLabelMBean implements Serializable{
 	protected String description;
 
 	public UpdateLabelMBean() throws Exception {
-		setLabel();
+		System.out.println("SelectedLabel vale: "+selectedLabel);
 	}
 	
 	
@@ -94,20 +94,11 @@ public class UpdateLabelMBean implements Serializable{
 		
 		Properties props = System.getProperties();
 		Context ctx = new InitialContext(props);
+		System.out.println("Vamos a actualizar");
 		userRemote = (UserFacadeRemote) ctx.lookup("java:app/TopOffers.jar/UserFacadeBean!ejb.systemAdministration.UserFacadeRemote");		
 		userRemote.updateLabel(selectedLabel, text, description);
 		return "LabelsListView";
 	}
 	
-	
-	
-	
-
-	public void setLabel() throws NamingException {
-		Properties props = System.getProperties();
-		Context ctx = new InitialContext(props);
-		userRemote = (UserFacadeRemote) ctx.lookup("java:app/TopOffers.jar/UserFacadeBean!ejb.systemAdministration.UserFacadeRemote");		
-		label = userRemote.getLabel(selectedLabel);
-	}
 }
 

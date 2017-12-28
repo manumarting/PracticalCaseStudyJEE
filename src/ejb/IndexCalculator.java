@@ -20,7 +20,10 @@ public class IndexCalculator {
 
 	public IndexCalculator() {
 		
-		this.aux=0;
+		
+		this.id=1;
+		this.aux=1;
+		this.valor=0;
 	}
 	/** Funcionamiento 
 	 * 
@@ -30,7 +33,7 @@ public class IndexCalculator {
 	 */
 	
 	public int getLabelIndex(Collection<LabelJPA> list) {
-		
+		System.out.println("Dentro de Calculator");
 		if(list.isEmpty()) {
 			id=0;
 		}
@@ -38,13 +41,16 @@ public class IndexCalculator {
 			for(Iterator <LabelJPA> iter = list.iterator(); iter.hasNext();) {
 				LabelJPA test = (LabelJPA) iter.next();
 				valor=test.getLabelId();
+				System.out.println("Valor vale: "+valor);
 				if(valor>=aux) {
 					aux=valor;
 					id=aux;
+					System.out.println("id vale ahora: "+id);
 				}
 			aux=aux+1;
 			}
 		}id=id+1;
+
 		return id;
 	}
 }

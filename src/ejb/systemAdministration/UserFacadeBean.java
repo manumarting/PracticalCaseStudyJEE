@@ -55,7 +55,7 @@ public class UserFacadeBean implements UserFacadeRemote {
 
 	public void addLabel(String text, String description) {
 		@SuppressWarnings("unchecked")
-		Collection<LabelJPA> allLabels = entman.createQuery("from LabelJPA").getResultList();
+		Collection<LabelJPA> allLabels = entman.createQuery("from LabelJPA ORDER BY label_id").getResultList();
 		int id= calculator.getLabelIndex(allLabels);
 		System.out.println("El valor de la nueva etiqueta es: "+id);
 		LabelJPA label = new LabelJPA(id, text, description);
@@ -71,6 +71,8 @@ public class UserFacadeBean implements UserFacadeRemote {
 	}
 
 	public void updateLabel(int labelId, String text, String description) {
+		System.out.println("Vamos a actualizar la etiqueta: "+labelId);
+		
 		LabelJPA label = entman.find(LabelJPA.class, labelId);
 		label.setDescription(description);
 		label.setText(text);

@@ -15,11 +15,10 @@
 				    <h:dataTable value="#{listLabels.labelListView}" var="label" align="center">
 		       			 <h:column>
 		       			 	<h:outputText value="#{label.text}" label="Nombre" />
-		       			 </h:column>
-		       			 <h:column>			
+		       			 </h:column>	
 					<h:column>
 	       		 		<h:button outcome="UpdateLabelView" value="Modificar">
-	       		 			<f:param name="selectedLabel" value="#{label.labelId}" />	
+	       		 			<f:param name="labelId" value="#{label.labelId}" />	
 						</h:button>
 					</h:column>
 		

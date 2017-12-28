@@ -16,6 +16,13 @@
 		       			 <h:column>
 		       			 	<h:outputText value="#{label.text}" label="Nombre" />
 		       			 </h:column>
+		       			 <h:column>			
+					<h:column>
+	       		 		<h:button outcome="UpdateLabelView" value="Modificar">
+	       		 			<f:param name="selectedLabel" value="#{label.labelId}" />	
+						</h:button>
+					</h:column>
+		
 			   		</h:dataTable>
 			 		 <h:button outcome="homeView" value="volver" />
 			 	</h:form>	

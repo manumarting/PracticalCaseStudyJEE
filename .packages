@@ -15,7 +15,7 @@
     </properties>
   </package>
   <package exploded="false" inWorkspace="true" name="TopOffers.war" todir="/TopOffers" type="jar">
-    <fileset dir="docroot" flatten="false" inWorkspace="true" includes="**">
+    <fileset dir="/TopOffers/docroot" flatten="false" inWorkspace="true" includes="**">
       <properties/>
     </fileset>
     <folder name="WEB-INF">

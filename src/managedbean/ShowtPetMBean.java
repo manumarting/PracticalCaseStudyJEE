@@ -56,7 +56,7 @@ public class ShowtPetMBean implements Serializable{
 	{	
 		Properties props = System.getProperties();
 		Context ctx = new InitialContext(props);
-		showPetRemote = (CatalogFacadeRemote) ctx.lookup("java:app/PracticalCaseStudyJEE.jar/CatalogFacadeBean!ejb.CatalogFacadeRemote");
+		showPetRemote = (CatalogFacadeRemote) ctx.lookup("java:app/TopOffers.jar/CatalogFacadeBean!ejb.CatalogFacadeRemote");
 		dataPet = (PetJPA) showPetRemote.showPet(idPet);
 	}
 }

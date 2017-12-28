@@ -52,7 +52,7 @@ public class ListCategoriesMBean implements Serializable{
 	{	
 		Properties props = System.getProperties();
 		Context ctx = new InitialContext(props);
-		catalogRemote = (CatalogFacadeRemote) ctx.lookup("java:app/PracticalCaseStudyJEE.jar/CatalogFacadeBean!ejb.CatalogFacadeRemote");
+		catalogRemote = (CatalogFacadeRemote) ctx.lookup("java:app/TopOffers.jar/CatalogFacadeBean!ejb.CatalogFacadeRemote");
 		@SuppressWarnings("unchecked")
 		Collection<CategoryJPA> categoryCollection = (Collection<CategoryJPA>) catalogRemote.listAllCategories();
 		for (Iterator<CategoryJPA> iter2 = categoryCollection.iterator(); iter2.hasNext();)

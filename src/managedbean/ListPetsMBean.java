@@ -195,7 +195,7 @@ public class ListPetsMBean implements Serializable{
 		Properties props = System.getProperties();
 		Context ctx = new InitialContext(props);
 		screen = 0;
-		petsRemote = (CatalogFacadeRemote) ctx.lookup("java:app/PracticalCaseStudyJEE.jar/CatalogFacadeBean!ejb.CatalogFacadeRemote");
+		petsRemote = (CatalogFacadeRemote) ctx.lookup("java:app/TopOffers.jar/CatalogFacadeBean!ejb.CatalogFacadeRemote");
 		if (category.equals("ALL PETS"))
 		{
 			petsList = (Collection<PetJPA>)petsRemote.listAllPets();

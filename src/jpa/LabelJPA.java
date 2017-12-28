@@ -1,4 +1,4 @@
-package ejb;
+package jpa;
 
 import java.io.Serializable;
 import javax.persistence.*;

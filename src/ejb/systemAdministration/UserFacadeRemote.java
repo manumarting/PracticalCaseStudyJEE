@@ -3,7 +3,6 @@ package ejb.systemAdministration;
 import java.util.Collection;
 
 import javax.ejb.Remote;
-import javax.faces.view.Location;
 
 import jpa.LabelJPA;
 

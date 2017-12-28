@@ -1,7 +1,6 @@
 package ejb.systemAdministration;
 import java.util.Collection;
 
-
 import jpa.LabelJPA;
 
 

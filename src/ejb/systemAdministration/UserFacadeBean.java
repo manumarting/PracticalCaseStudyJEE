@@ -71,7 +71,6 @@ public class UserFacadeBean implements UserFacadeRemote {
 	}
 
 	public void updateLabel(int labelId, String text, String description) {
-		System.out.println("Vamos a actualizar la etiqueta: "+labelId);
 		
 		LabelJPA label = entman.find(LabelJPA.class, labelId);
 		label.setDescription(description);

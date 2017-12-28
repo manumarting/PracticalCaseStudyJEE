@@ -21,9 +21,15 @@
 	       		 			<f:param name="labelId" value="#{label.labelId}" />	
 						</h:button>
 					</h:column>
+					<h:column>
+	       		 		<h:button outcome="DeleteLabelView" value="Borrar">
+	       		 			<f:param name="labelId" value="#{label.labelId}" />	
+						</h:button>
+					</h:column>
 		
 			   		</h:dataTable>
 			 		 <h:button outcome="homeView" value="volver" />
+			 		  <h:button outcome="AddLabelView" value="añadir" />
 			 	</h:form>	
 	
 	</h:body>

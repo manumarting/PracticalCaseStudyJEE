@@ -23,7 +23,7 @@ import ejb.CatalogFacadeRemote;
 public class CatalogFacadeBean implements CatalogFacadeRemote {
 	
 	//Persistence Unit Context
-	@PersistenceContext(unitName="PracticalCase") 
+	@PersistenceContext(unitName="TopOffers") 
 	private EntityManager entman;
    
 	/**

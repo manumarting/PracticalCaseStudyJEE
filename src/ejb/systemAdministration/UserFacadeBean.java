@@ -5,9 +5,9 @@ import java.util.Collection;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import managedbean.utils.*;
 
 import jpa.LabelJPA;
+import utils.*;
 
 @Stateless
 public class UserFacadeBean implements UserFacadeRemote {

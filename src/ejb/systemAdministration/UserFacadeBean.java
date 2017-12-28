@@ -6,8 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import managedbean.IndexCalculator;
-
+import ejb.IndexCalculator;
 import jpa.LabelJPA;
 
 @Stateless

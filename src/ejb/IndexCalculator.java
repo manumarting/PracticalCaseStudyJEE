@@ -1,4 +1,4 @@
-package managedbean;
+package ejb;
 
 import java.util.Collection;
 import java.util.Iterator;

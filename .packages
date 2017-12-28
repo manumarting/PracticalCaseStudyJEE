@@ -23,7 +23,7 @@
         <properties/>
       </fileset>
       <folder name="classes\managedbean">
-        <fileset dir="/TopOffers/bin" excludes="/ejb/*, /integration/*/, /META-INF/*" flatten="false" inWorkspace="true" includes="**">
+        <fileset dir="bin/managedbean" excludes="/ejb/*, /integration/*/, /META-INF/*" flatten="false" inWorkspace="true" includes="**">
           <properties/>
         </fileset>
         <properties/>

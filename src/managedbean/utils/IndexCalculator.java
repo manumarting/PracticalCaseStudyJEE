@@ -1,4 +1,4 @@
-package utils;
+package managedbean.utils;
 
 import java.util.Collection;
 import java.util.Iterator;
